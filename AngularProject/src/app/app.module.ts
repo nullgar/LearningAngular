@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
+import { MerryChristmasComponent } from './merry-christmas/merry-christmas.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent
+    ServerComponent,
+    MerryChristmasComponent
   ],
   imports: [
     BrowserModule
