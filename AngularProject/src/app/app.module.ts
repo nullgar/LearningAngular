@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { MerryChristmasComponent } from './merry-christmas/merry-christmas.component';
 import { WarningAlert } from './warning-alert/warning-alert.component';
+import { SuccessAlertComponent } from './success-alert/success-alert.component';
 
 
 @NgModule({
@@ -12,7 +13,9 @@ import { WarningAlert } from './warning-alert/warning-alert.component';
     AppComponent,
     ServerComponent,
     MerryChristmasComponent,
-    WarningAlert
+    WarningAlert,
+    SuccessAlertComponent,
+    
   ],
   imports: [
     BrowserModule
