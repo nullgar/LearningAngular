@@ -7,6 +7,12 @@ import { Component } from "@angular/core";
 export class ServerComponent {
     serverId: number = 10;
     serverStatus: string = "ofline";
+    allowNewServer = false;
+
+    constructor() {
+        setTimeout(() => {this.allowNewServer = true}, 5000);
+        //console.log("fires off")
+    }
     getServerStatus = () => {
         return this.serverStatus;
     }
