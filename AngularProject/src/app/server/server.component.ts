@@ -2,13 +2,15 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: 'app-server',
-    template: `
-        <h1>
-            Hello I'm the Server Component
-        </h1>`
+    templateUrl: './server.component.html'
 })
 export class ServerComponent {
-    
+    serverId: number = 10;
+    serverStatus: string = "ofline";
+    getServerStatus = () => {
+        return this.serverStatus;
+    }
+    //You can also use function like the one above to resolve string interpolation.
 }
 
 
