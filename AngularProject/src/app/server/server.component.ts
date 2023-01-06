@@ -7,14 +7,19 @@ import { Component } from "@angular/core";
 export class ServerComponent {
     serverId: number = 10;
     serverStatus: string = "ofline";
-    allowNewServer = false;
-
+    allowNewServer: boolean = false;
+    type serverCreationStatus = "No server was created!" | "Server was created";
+    
     constructor() {
         setTimeout(() => {this.allowNewServer = true}, 5000);
         //console.log("fires off")
     }
     getServerStatus = () => {
         return this.serverStatus;
+    }
+
+    onCreateServer = () => {
+        this.serverCreationStatus = !this.serverCreationStatus
     }
     //You can also use function like the one above to resolve string interpolation.
 }
